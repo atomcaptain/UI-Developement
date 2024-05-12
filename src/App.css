@@ -1,0 +1,75 @@
+/* let's create theme in root */
+/* this color template work as default */
+:root{
+  --background-color:#fff;
+  --forground-color:#2b2169;
+  --primary-text-color:#000;
+  --secondary-text-color:#fff;
+  --toggle-bg:#eef286fb;
+  --toggle-fg:#ffd000;
+  --border-color:var(--primary-text-color);
+  /* add styling for paragraph */
+  
+  --paragraph-background:#656c9d;
+  --paragraph-text-color:#ffffff;
+
+
+}
+
+/* Add dark theme */
+[data-theme='dark']{
+  --background-color:#120202;
+  --forground-color:#8777ef;
+  --primary-text-color:#bfbfbf;
+  --secondary-text-color:#2733b9;
+  --toggle-bg:#eef286fb;
+  --toggle-fg:#ffd000;
+  --border-color:var(--primary-text-color);  
+  --paragraph-background:#232742;
+  --paragraph-text-color:#ffffff;
+}
+
+[data-theme='light']{
+  --background-color:#777777;
+  --forground-color:#8777ef;
+  --primary-text-color:#fafafa;
+  --secondary-text-color:#ffffff;
+  --toggle-bg:#eef286fb;
+  --toggle-fg:#ffd000;
+  --border-color:var(--primary-text-color);
+  --paragraph-background:#656c9d;
+  --paragraph-text-color:#ffffff;
+
+
+}
+
+.commonBtn{
+  border-radius:5px;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  /* border:2px solid var(--border-color); */
+}
+
+.homebutton{   
+  background-color: var(--background-color);
+  color:var(--primary-text-color) ;
+}
+.aboutbutton{
+  background-color: var(--background-color);
+  color:var(--primary-text-color) ;
+}
+.pragraph{
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--paragraph-background);
+  color: var(--paragraph-text-color);
+  box-shadow: 2px 2px 2px 2px #eee;
+}
+
+
+body{
+  transition: all 1s ease-in-out;
+}
